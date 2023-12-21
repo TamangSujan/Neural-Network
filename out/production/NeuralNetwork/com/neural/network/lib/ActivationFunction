@@ -1,0 +1,30 @@
+The purpose of activation function is to let pass from one neuron to other neuron if some threshold level is reached
+
+There are different types of activation function. Some of them are:
+1. Step Function: It a simple function where values are either 0 or 1
+    if some value of x >= 1 then its activated
+    if some value of x < 1 then its not activated
+
+2. Sigmoid Function: It is another function which formula is given below:
+    1 / (1 + e ^ -x)
+    It gives values from -1 to +1
+
+    This function is not used as due to time complexity than ReLu and has a vanishing problem in Gradient Descent
+
+3. ReLu
+    Rectified Linear: It is another simple function which gives values range between 0 to +ve
+
+    It is speed efficient than Sigmoid and used in neural network.
+
+Having more neurons in hidden layers using ReLU as activation function tends to make a sin graph in perfect.
+Lower the number, faster the calculation but jaggedy sin graph while more the number closer to perfect but requires more computation power.
+
+There must be at least two hidden layers to make a sin graph.
+
+4. SoftMax Activation
+    It is specially used for output layer. It calculation is just;
+    (2.71828182846 ^ x) / TotalRowSum, It doesn't let negative value.
+
+    Output Layer Input ->  SoftMax Activation (Exponentiation Power -> Probability Distribution) / Normalization -> Output
+
+    Probability Distribution is used to for result, which has more closer

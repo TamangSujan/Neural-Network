@@ -1,0 +1,21 @@
+In neural network, each input has its own weight value to corresponding neuron.
+That corresponding neuron has a bias value injected.
+
+It means every different corresponding neuron has different weight value.
+
+A Tensor is an object which can be represented as array in AI.
+
+Inputs are vector
+Weights are matrix vector
+Outputs are vector
+
+Kinda a fun fact:
+    Output = Weight * Input + Bias
+    y = mx + b
+    Y = Result
+    M = Slope
+    X = Input
+    B/C = Constant
+
+    Bias is for Offset, as without Bias or Constant, we cannot offset to some point
+    
